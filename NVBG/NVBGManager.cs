@@ -33,7 +33,7 @@ namespace NVBG
         /// <summary>
         /// folder that contains the .xml and .xsl files
         /// </summary>
-        public static string m_dataFolderName = @"../../../../../data/nvbg-toolkit";
+        public static string m_dataFolderName = @"../data/nvbg-toolkit/";
         public static string m_expressionFileName = "NVBG_face_expressions.xml";
         /// <summary>
         /// path to the .xsl rule transform file
@@ -956,7 +956,7 @@ namespace NVBG
             if (m_useCommonDataPath)
             {
                 
-                m_dataFolderName = @"../../data/nvbg-common/";
+                m_dataFolderName = @"../data/nvbg-common/";
                 //ruleInputFile = m_dataFolderName + @"rule_input_" + m_characters[_characterName].AgentInfo.Culture + @".xml";
                 m_transformXsl = m_dataFolderName + @"NVBG_transform.xsl";
 

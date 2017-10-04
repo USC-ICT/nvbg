@@ -33,7 +33,7 @@ namespace NVBG
         public const int parseWaitTime = 3;
         private int m_totalTimeMarkers = 0;
         List<string> m_processedSentences;
-        private string m_parseCachePath = @"../../../../../data/cache/";
+        private string m_parseCachePath = @"../data/cache/";
         private StreamWriter m_fileWriter;
         StreamReader m_fileReader;
         private int m_fmlBmlTagCount;
