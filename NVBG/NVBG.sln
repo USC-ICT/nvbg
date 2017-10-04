@@ -5,11 +5,11 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NVBG", "NVBG.csproj", "{094D9668-EA29-4F01-8C55-FC3C969CDED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vhmsg-net", "..\..\lib\vhmsg\vhmsg-net\vhmsg-net.csproj", "{DE4240A9-DBBA-410F-888F-462384A5B280}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vhmsg-net", "..\vhmsg-net\vhmsg-net.csproj", "{DE4240A9-DBBA-410F-888F-462384A5B280}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs2010-nms", "..\..\lib\activemq\activemq-dotnet\Apache.NMS\vs2010-nms.csproj", "{300C1716-0674-4D01-8F5D-151E59A504FE}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs2010-nms", "..\activemq-dotnet\Apache.NMS\vs2010-nms.csproj", "{300C1716-0674-4D01-8F5D-151E59A504FE}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs2010-activemq", "..\..\lib\activemq\activemq-dotnet\Apache.NMS.ActiveMQ\vs2010-activemq.csproj", "{08321F42-4B3D-4815-B592-95962BAC3B9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "vs2010-activemq", "..\activemq-dotnet\Apache.NMS.ActiveMQ\vs2010-activemq.csproj", "{08321F42-4B3D-4815-B592-95962BAC3B9F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

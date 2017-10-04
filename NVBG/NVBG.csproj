@@ -161,7 +161,7 @@
     </BootstrapperPackage>
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\lib\vhmsg\vhmsg-net\vhmsg-net.csproj">
+    <ProjectReference Include="..\vhmsg-net\vhmsg-net.csproj">
       <Project>{DE4240A9-DBBA-410F-888F-462384A5B280}</Project>
       <Name>vhmsg-net</Name>
     </ProjectReference>
@@ -175,24 +175,9 @@
   </Target>
   -->
   <PropertyGroup>
-    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">if $(ConfigurationName) == Debug copy /Y "$(TargetPath)" "..\..\$(TargetName)d$(TargetExt)"
-if $(ConfigurationName) == Release copy /Y "$(TargetPath)" ..\..
-copy /Y "$(TargetDir)\vhmsg-net.dll" ..\..
-copy /Y "$(TargetDir)\Apache.NMS.dll" ..\..
-copy /Y "$(TargetDir)\Apache.NMS.ActiveMQ.dll" ..\..
-copy /Y "$(TargetDir)\Ionic.Zlib.dll" ..\..
-
-if not exist ..\..\..\..\bin\NVBG\bin\$(ConfigurationName) mkdir ..\..\..\..\bin\NVBG\bin\$(ConfigurationName)
-if $(ConfigurationName) == Debug copy /Y "$(TargetPath)" "..\..\..\..\bin\NVBG\bin\Debug\$(TargetName)d$(TargetExt)"
-if $(ConfigurationName) == Release copy /Y "$(TargetPath)" ..\..\..\..\bin\NVBG\bin\Release
-copy /Y "$(TargetDir)\vhmsg-net.dll" ..\..\..\..\bin\NVBG\bin\$(ConfigurationName)
-copy /Y "$(TargetDir)\Apache.NMS.dll" ..\..\..\..\bin\NVBG\bin\$(ConfigurationName)
-copy /Y "$(TargetDir)\Apache.NMS.ActiveMQ.dll" ..\..\..\..\bin\NVBG\bin\$(ConfigurationName)
-copy /Y "$(TargetDir)\Ionic.Zlib.dll" ..\..\..\..\bin\NVBG\bin\$(ConfigurationName)
-</PostBuildEvent>
+    <PostBuildEvent Condition=" '$(OS)' == 'Windows_NT' ">
+    </PostBuildEvent>
     <PostBuildEvent Condition=" '$(OS)' != 'Windows_NT' ">
-mkdir -p $(TargetDir)../../../../bin/NVBG/bin/Release/
-cp -f $(TargetDir)* $(TargetDir)../../../../bin/NVBG/bin/Release/
-</PostBuildEvent>
+    </PostBuildEvent>
   </PropertyGroup>
 </Project>
